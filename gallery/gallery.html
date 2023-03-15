@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>	
+</head>
+<body>
+	<nav class="navbar">
+		<div class="content">
+		  <div class="logo">
+			<a href="#">St. Paul's Sr. Sec. School, Aburoad</a>
+		  </div>
+		  <ul class="menu-list">
+			<div class="icon cancel-btn">
+			  <i class="fas fa-times"></i>
+			</div>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../about us/about.html">About</a></li>
+			<li><a href="../index.html">Services</a></li>
+			<li><a href="../index.html">Cources</a></li>
+			<li><a href="../contact-page-html-css-master/index.html">Contact</a></li>
+		  </ul>
+		  <div class="icon menu-btn">
+			<i class="fas fa-bars"></i>
+		  </div>
+		</div>
+	  </nav>
+<section class="gallery">
+	<div class="title">
+		<h1>Gallery</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+
+		</div>
+		<div class="row">
+			<!-- gallery item start -->
+			<div class="gallery-item school">
+				<div class="gallery-item-inner">
+					<img src="img/school.jpg">
+					<!-- <img src="img/school1.jpg" alt="school"> -->
+					<img src="img/school1.jpg">
+					<img src="img/DSC_3612.jpg">
+					<img src="img/DSC_3850.jpg">
+					<img src="img/DSC01993.jpg">
+					<img src="img/IMG-20191218-WA0026.jpg">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item school">
+				<div class="gallery-item-inner">
+					<img src="img/schoo2.jpg">
+					<img src="img/school2.jpg">
+					<!-- <img src="img/school2.jpg" alt="school"> -->
+					<img src="img/DSC_3647.jpg">
+					<img src="img/s.jpg">
+					<img src="img/DSC02869.jpg">
+					<img src="img/DSC02814.jpg">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item school">
+				<div class="gallery-item-inner">
+					<img src="img/b.jpg">
+					<img src="img/DSC_3917.jpg">
+					<img src="img/a.jpg">
+					<img src="img/IMG-20200112-WA0023.jpg">
+					<img src="img/DSC_0011.jpg">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item school">
+				<div class="gallery-item-inner">
+					<img src="img/DSC03128.jpg">
+					<img src="img/DSC04223.jpg">
+					<img src="img/DSC02857.jpg">
+					<img src="img/DSC02854.jpg">
+					<img src="img/IMG-20191113-WA0039.jpg">
+					<img src="img/DSC_3814.jpg">
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item school">
+				<div class="gallery-item-inner">
+					<img src="img/DSC02927.jpg">
+					<img src="img/DSC_3060.jpg">
+					<img src="img/DSC_5393.jpg">
+					<img src="img/IMG-20190909-WA0035.jpg">
+					<img src="img/IMG-20190906-WA0069.jpg">
+					<!-- <img src="img/shoe-1.jpg" alt="school"> -->
+				</div>
+			</div>
+			<!-- gallery item end -->
+			<!-- gallery item start -->
+			<div class="gallery-item school">
+				<div class="gallery-item-inner">
+					<!-- <img src="img/headphone-3.jpg" alt="school">
+					<img src="img/school1.jpg" alt="school">
+					<img src="img/school2.jpg" alt="school"> -->
+					<img src="img/DSC_3708.jpg">
+					<img src="img/DSC02887.jpg">
+					<img src="img/DSC02802.jpg">
+					<img src="img/DSC_1354.jpg">
+					<img src="img/DSC02921.jpg">
+					<img src="img/DSC_3917.jpg">
+				</div>
+			</div>
+			<!-- gallery item end -->
+		</div>
+	</div>
+</section>
+<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+<script src="js/script.js"></script>
+<footer>
+    <p>Copyright &copy; <script>document.write(new Date().getfullyear());</script>, 2021 by Sakshi Pal</p>
+  </footer>
+</body>
+</html>
